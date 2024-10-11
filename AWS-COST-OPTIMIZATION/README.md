@@ -80,6 +80,23 @@ Ensure that the Lambda function has appropriate permissions to perform the follo
 
 You can attach these permissions via a Lambda execution role in the AWS IAM console.
 
+
+### Results pic 
+![CREATE EC2 INSTANCE WITH NAME - STALE INSTANCE](https://github.com/user-attachments/assets/e64e7684-fbf7-4cc1-b2d5-a5bfe54b7414)
+
+## Attached snapshotdelete and snapshotDescribe polici but did not add describe instances or describe volume
+![ ](https://github.com/user-attachments/assets/2257e6a9-5734-42e2-8ee2-7fa0283893bf)
+
+## After attaching Necessary Poicies to the role of the lambda function. (below or the policy (INLINE) to attach)
+![image](https://github.com/user-attachments/assets/172e3ed2-fb97-4905-9813-3a7569febf71)
+
+## The snapshot and stale instance before deletion
+![image](https://github.com/user-attachments/assets/be94789c-7f4d-44b9-a28f-588d67a14ed4)
+
+## Lambda Function Deleted the unused snapshot after I deleted the instance (stale instance)
+![image](https://github.com/user-attachments/assets/5df4101d-4cc5-4f4d-b5f3-7f2de2efba3f)
+
+
 ### Step 4: Set up a Trigger (Optional)
 
 If you want the function to run periodically, you can create a CloudWatch Event rule to trigger the Lambda function on a regular schedule (e.g., daily or weekly).
