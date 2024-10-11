@@ -1,5 +1,3 @@
-### GitHub `README.md` for AWS Cloud Cost Optimization - Identifying Stale EBS Snapshots
-
 # AWS Cloud Cost Optimization - Identifying Stale EBS Snapshots
 
 This project focuses on optimizing AWS cloud storage costs by identifying and deleting stale EBS snapshots that are no longer associated with any active EC2 instances. By cleaning up unused snapshots, you can significantly reduce storage costs while maintaining the integrity of your active instances.
